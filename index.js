@@ -1,7 +1,3 @@
-// =========================================
-// ANIMAÇÃO DE DIGITAÇÃO
-// =========================================
-
 const texto = document.querySelector(".hero h2 strong");
 
 const palavras = [
@@ -53,10 +49,6 @@ function escreverTexto() {
 
 escreverTexto();
 
-// =========================================
-// ANIMAÇÃO AO ROLAR A PÁGINA
-// =========================================
-
 const elementos = document.querySelectorAll(
   ".project-card, .skill-card, .about-highlight",
 );
@@ -80,10 +72,6 @@ elementos.forEach((elemento) => {
 
   observer.observe(elemento);
 });
-
-// =========================================
-// FECHAR MENU NO CELULAR
-// =========================================
 
 const linksMenu = document.querySelectorAll(".navbar .nav-link");
 
