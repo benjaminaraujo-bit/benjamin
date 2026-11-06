@@ -1,4 +1,3 @@
-
 :root {
   --background: #0f1117;
   --background-light: #151a24;
@@ -58,7 +57,6 @@ body::after {
   pointer-events: none;
   z-index: -1;
 }
-
 
 .navbar {
   background: rgba(15, 17, 23, 0.9);
@@ -275,8 +273,6 @@ body::after {
   margin: 0;
 }
 
-
-
 .project-card {
   height: 100%;
   overflow: hidden;
@@ -367,7 +363,6 @@ body::after {
   color: var(--blue);
 }
 
-
 .project-button {
   display: inline-flex;
   align-items: center;
@@ -399,8 +394,6 @@ body::after {
   outline: 2px solid var(--blue-light);
   outline-offset: 3px;
 }
-
-
 
 .project-details[hidden] {
   display: none !important;
@@ -434,22 +427,23 @@ body::after {
   min-height: 0;
 }
 
-
 .contact-section {
-  padding-bottom: 130px;
+  padding-bottom: 70px;
 }
 
 .contact-box {
   position: relative;
   overflow: hidden;
-  padding: 60px;
-  border-radius: 20px;
+  padding: 35px 40px;
+  border-radius: 16px;
   background: linear-gradient(135deg, #111827, #172554);
   border: 1px solid rgba(59, 130, 246, 0.2);
+  max-width: 850px;
+  margin: 0 auto;
 }
 
 .contact-content {
-  max-width: 700px;
+  max-width: 600px;
 }
 
 .contact-content > span {
@@ -459,15 +453,16 @@ body::after {
 }
 
 .contact-content h2 {
-  margin-top: 10px;
+  margin-top: 8px;
   font-family: "Space Grotesk", sans-serif;
-  font-size: clamp(35px, 5vw, 55px);
+  font-size: clamp(26px, 4vw, 38px);
 }
 
 .contact-content p {
   color: var(--gray);
-  line-height: 1.8;
-  margin: 20px 0 30px;
+  line-height: 1.6;
+  margin: 12px 0 22px;
+  font-size: 15px;
 }
 
 .contact-buttons {
@@ -480,12 +475,13 @@ body::after {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 12px 17px;
+  padding: 10px 16px;
   color: white;
   text-decoration: none;
   border: 1px solid #3a3f4c;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.03);
+  font-size: 14px;
   transition: 0.3s;
 }
 
@@ -505,8 +501,6 @@ body::after {
   transform: rotate(-10deg);
 }
 
-
-
 footer {
   padding: 30px 0;
   border-top: 1px solid var(--border);
@@ -514,9 +508,7 @@ footer {
   font-size: 13px;
 }
 
-
 @media (max-width: 991px) {
-
   .hero-content {
     padding-top: 40px;
   }
@@ -528,11 +520,9 @@ footer {
   .section-heading {
     margin-bottom: 35px;
   }
-
 }
 
 @media (max-width: 576px) {
-
   .navbar {
     padding: 10px 0;
   }
@@ -541,7 +531,6 @@ footer {
     font-size: 18px;
   }
 
- 
   .hero {
     padding: 90px 0 35px;
   }
@@ -578,7 +567,6 @@ footer {
     font-size: 14px;
   }
 
-
   .section {
     padding: 40px 0;
   }
@@ -601,7 +589,6 @@ footer {
     font-size: 29px;
   }
 
-
   .about-text p {
     font-size: 14px;
     line-height: 1.75;
@@ -620,7 +607,6 @@ footer {
     font-size: 14px;
     line-height: 1.7;
   }
-
 
   .project-top {
     height: 115px;
@@ -662,25 +648,24 @@ footer {
     margin-bottom: 12px;
   }
 
-
   .contact-section {
-    padding: 35px 0 50px;
+    padding: 35px 0 45px;
   }
 
   .contact-box {
-    padding: 25px 20px;
+    padding: 22px 18px;
     border-radius: 14px;
   }
 
   .contact-content h2 {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1.2;
   }
 
   .contact-content p {
     font-size: 14px;
-    line-height: 1.7;
-    margin: 15px 0 20px;
+    line-height: 1.6;
+    margin: 10px 0 16px;
   }
 
   .contact-buttons {
@@ -688,10 +673,9 @@ footer {
   }
 
   .contact-button {
-    padding: 10px 12px;
+    padding: 9px 12px;
     font-size: 13px;
   }
-
 
   footer {
     padding: 20px 0;
@@ -710,15 +694,12 @@ footer {
     filter: blur(90px);
   }
 
-  
   .project-card:hover {
     transform: none;
   }
-
 }
 
 @media (max-width: 380px) {
-
   .hero h1 {
     font-size: 33px;
   }
@@ -732,13 +713,12 @@ footer {
   }
 
   .contact-content h2 {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .contact-box {
-    padding: 22px 16px;
+    padding: 18px 14px;
   }
-
 }
 
 .navbar-toggler {
