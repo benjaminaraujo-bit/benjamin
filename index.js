@@ -90,7 +90,13 @@ linksMenu.forEach((link) => {
 });
 
 function toggleProjetos(botao) {
-  const detalhes = document.getElementById("detalhes-projetos");
+
+  const card = botao.closest('.project-card');
+  if (!card) return;
+
+  const detalhes = card.querySelector('.project-details');
+  if (!detalhes) return;
+
   const aberto = botao.getAttribute("aria-expanded") === "true";
 
   detalhes.hidden = aberto;
