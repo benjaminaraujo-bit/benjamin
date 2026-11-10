@@ -732,3 +732,163 @@ footer {
 .navbar-toggler-icon {
   filter: invert(1) grayscale(100%) brightness(200%);
 }
+
+/* =========================================
+   LISTA DE ATIVIDADES ACP
+========================================= */
+
+.acp-list {
+  margin-top: 22px;
+}
+
+.acp-category {
+  margin-bottom: 24px;
+}
+
+.acp-category h4 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 12px;
+  color: var(--blue-light);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+}
+
+.acp-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.acp-category li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--gray);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.acp-category li strong {
+  flex-shrink: 0;
+  color: var(--blue-light);
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.acp-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 22px;
+  padding: 16px;
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  border-radius: 9px;
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--white);
+}
+
+.acp-total strong {
+  color: var(--blue-light);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  .acp-category li {
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .acp-category li strong {
+    font-size: 12px;
+  }
+
+  .acp-total strong {
+    font-size: 18px;
+  }
+}
+
+/* =========================================
+   BOTÕES E MODAL DOS CERTIFICADOS
+========================================= */
+
+.acp-category li {
+  flex-wrap: wrap;
+}
+
+.certificate-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 8px 12px;
+  border: 1px solid rgba(96, 165, 250, 0.35);
+  border-radius: 7px;
+  background: rgba(59, 130, 246, 0.12);
+  color: var(--blue-light);
+  font:
+    600 12px "DM Sans",
+    sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.certificate-button:hover {
+  color: #fff;
+  background: var(--blue);
+  border-color: var(--blue);
+}
+
+.certificate-modal {
+  background: var(--card);
+  color: var(--white);
+  border: 1px solid var(--border);
+}
+
+.certificate-modal .modal-header,
+.certificate-modal .modal-footer {
+  border-color: var(--border);
+}
+
+.certificate-modal .modal-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+}
+
+.certificate-modal .modal-body {
+  padding: 12px;
+  text-align: center;
+  background: #0b0d12;
+}
+
+.certificate-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 78vh;
+  object-fit: contain;
+}
+
+.certificate-close {
+  background: transparent;
+  border-color: #475569;
+  color: var(--white);
+}
+
+@media (max-width: 576px) {
+  .certificate-button {
+    font-size: 11px;
+    padding: 7px 10px;
+  }
+
+  .certificate-modal .modal-title {
+    font-size: 15px;
+  }
+}
