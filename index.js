@@ -106,3 +106,29 @@ function toggleProjetos(botao) {
     ? 'Ver projeto <i class="bi bi-arrow-up-right"></i>'
     : 'Fechar projeto <i class="bi bi-x-lg"></i>';
 }
+
+const botoesCertificados = document.querySelectorAll(
+    ".certificate-button[data-certificate]"
+);
+
+const imagemCertificado = document.getElementById("certificateImage");
+const tituloCertificado = document.getElementById("certificateModalLabel");
+const linkCertificado = document.getElementById("certificateOpenLink");
+
+botoesCertificados.forEach((botao) => {
+    botao.addEventListener("click", () => {
+
+        const caminho = botao.dataset.certificate;
+        const titulo = botao.dataset.title;
+
+        imagemCertificado.src = caminho;
+        tituloCertificado.textContent = titulo;
+        linkCertificado.href = caminho;
+
+        const modalElement = document.getElementById("certificateModal");
+
+        const modal = bootstrap.Modal.getOrCreateInstance(modalElement);
+
+        modal.show();
+    });
+});
